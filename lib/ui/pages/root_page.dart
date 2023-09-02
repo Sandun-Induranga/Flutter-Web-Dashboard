@@ -9,10 +9,13 @@ class RootPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const ResponsiveLayout(
-      mobile: MobileBody(),
-      tablet: TabletBody(),
-      desktop: DesktopBody(),
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: ResponsiveLayout(
+        mobile: MobileBody(),
+        tablet: TabletBody(),
+        desktop: DesktopBody(),
+      ),
     );
   }
 }
