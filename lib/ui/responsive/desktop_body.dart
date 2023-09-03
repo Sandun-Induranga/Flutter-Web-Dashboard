@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web_dashboard/ui/theme/colors.dart';
+import 'package:flutter_web_dashboard/ui/widgets/card.dart';
 
 class DesktopBody extends StatelessWidget {
   const DesktopBody({super.key});
@@ -72,10 +73,29 @@ class DesktopBody extends StatelessWidget {
             ),
           ),
           Expanded(
-            child: Container(
+              child: Container(
+            decoration: const BoxDecoration(
               color: AppColors.backgroundColor,
             ),
-          ),
+            child: const Column(
+              children: [
+                Padding(
+                  padding: EdgeInsets.all(15.0),
+                  child: Row(
+                    children: [
+                      DashBoardCard(),
+                      SizedBox(width: 15),
+                      DashBoardCard(),
+                      SizedBox(width: 15),
+                      DashBoardCard(),
+                      SizedBox(width: 15),
+                      DashBoardCard(),
+                    ],
+                  ),
+                )
+              ],
+            ),
+          )),
         ],
       ),
     );
