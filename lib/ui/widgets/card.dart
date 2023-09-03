@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
 class DashBoardCard extends StatelessWidget {
-  const DashBoardCard({super.key});
+  final double width;
+  const DashBoardCard({
+    super.key,
+    required this.width,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +16,7 @@ class DashBoardCard extends StatelessWidget {
           Radius.circular(10),
         ),
       ),
-      width: MediaQuery.of(context).size.width * 0.17,
+      width: MediaQuery.of(context).size.width * width,
       height: 200,
     );
   }

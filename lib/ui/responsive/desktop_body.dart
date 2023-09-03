@@ -83,13 +83,13 @@ class DesktopBody extends StatelessWidget {
                   padding: EdgeInsets.all(15.0),
                   child: Row(
                     children: [
-                      DashBoardCard(),
+                      DashBoardCard(width: 0.17),
                       SizedBox(width: 15),
-                      DashBoardCard(),
+                      DashBoardCard(width: 0.17),
                       SizedBox(width: 15),
-                      DashBoardCard(),
+                      DashBoardCard(width: 0.17),
                       SizedBox(width: 15),
-                      DashBoardCard(),
+                      DashBoardCard(width: 0.17),
                     ],
                   ),
                 )
