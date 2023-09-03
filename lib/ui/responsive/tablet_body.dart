@@ -15,7 +15,7 @@ class TabletBody extends StatelessWidget {
       body: Row(
         children: [
           SizedBox(
-            width: 200,
+            width: 250,
             child: Padding(
               padding: const EdgeInsets.fromLTRB(50, 10, 10, 20),
               child: Column(
@@ -73,35 +73,36 @@ class TabletBody extends StatelessWidget {
             ),
           ),
           Expanded(
-              child: Container(
-            decoration: const BoxDecoration(
-              color: AppColors.backgroundColor,
-            ),
-            child: const Column(
-              children: [
-                Padding(
-                  padding: EdgeInsets.all(15.0),
-                  child: Row(
-                    children: [
-                      DashBoardCard(width: 0.28),
-                      SizedBox(width: 15),
-                      DashBoardCard(width: 0.28),
-                    ],
+            child: Container(
+              decoration: const BoxDecoration(
+                color: AppColors.backgroundColor,
+              ),
+              child: const Column(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(10, 20, 0, 20),
+                    child: Row(
+                      children: [
+                        DashBoardCard(width: 0.24),
+                        SizedBox(width: 10),
+                        DashBoardCard(width: 0.24),
+                      ],
+                    ),
                   ),
-                ),
-                Padding(
-                  padding: EdgeInsets.all(15.0),
-                  child: Row(
-                    children: [
-                      DashBoardCard(width: 0.28),
-                      SizedBox(width: 15),
-                      DashBoardCard(width: 0.28),
-                    ],
-                  ),
-                )
-              ],
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(10, 20, 0, 20),
+                    child: Row(
+                      children: [
+                        DashBoardCard(width: 0.24),
+                        SizedBox(width: 10),
+                        DashBoardCard(width: 0.24),
+                      ],
+                    ),
+                  )
+                ],
+              ),
             ),
-          )),
+          ),
         ],
       ),
     );
